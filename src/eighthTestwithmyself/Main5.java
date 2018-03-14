@@ -15,7 +15,7 @@ public class Main5 {
 			for(int i=1; i<a.length; i++){
 				for(int j=1; j<a[i].length; j++){
 					if(c1[i-1]==c2[j-1]) {
-						a[i][j] =  a[i-1][j-1]+1; //МоїХ 
+						a[i][j] =a[i-1][j-1]+1; //МоїХ 
 						if(a[i][j] > max) max = a[i][j];
 					}
 				}
