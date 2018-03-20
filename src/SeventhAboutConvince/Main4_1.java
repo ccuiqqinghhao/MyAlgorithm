@@ -22,7 +22,7 @@ public class Main4_1 {
 				for(int k=j+1; k<a.length; k++){
 					if(a[k]==1) continue;
 					a[k]=1;
-					System.out.println(  );  //Ìî¿ÕÎ»ÖÃ
+					System.out.println( s + " "+ (char)(i+'A') + (char)(j+'A') + (char)(k+'A') + " " + remain(a)  );  //Ìî¿ÕÎ»ÖÃ
 					a[k]=0;
 				}
 				a[j]=0;
@@ -41,6 +41,7 @@ public class Main4_1 {
 			for(int c=b+1; c<a.length; c++){
 				a[c] = 1;
 				String s = "A" + (char)(b+'A') + (char)(c+'A');
+				//System.out.println(s);
 				f(s,a);
 				a[c] = 0;
 			}
