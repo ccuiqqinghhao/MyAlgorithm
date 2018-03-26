@@ -1,6 +1,6 @@
 package testwithmyself;
 
-public class Main1_1 {
+public class Main1 {
 	/*
 	 * 
 	 * 
@@ -26,12 +26,14 @@ public class Main1_1 {
     注意：只提交分解的种类数，不要写其它附加内容，比如：说明性的文字*/
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int num1=2;
+		int num2=45;
 		int count=0;
-		
-		
-		for(int i=22;i<45;i++){
+		for(int i=2;i<num2;i++){
 			for(int j=46;j<45*45;j++){
-				if(45*(i+j)==2*i*j){
+				int x=i+j;
+				int y=i*j;
+				if(y*2==x*45){
 					count++;
 				}
 			}
@@ -39,5 +41,4 @@ public class Main1_1 {
 		System.out.println(count);
 		
 	}
-
 }
